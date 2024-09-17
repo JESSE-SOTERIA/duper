@@ -9,10 +9,10 @@ defmodule Duper do
   ## Examples
 
       iex> Duper.hello()
-      :world
+      :soteria
 
   """
   def hello do
-    :world
+    :soteria
   end
 end

@@ -1,5 +1,6 @@
 defmodule Duper.ResultsTest do
   use ExUnit.Case
+  # alias the results module under duper to 'Results'
   alias Duper.Results
 
   test "can add entries to the result" do
@@ -15,6 +16,7 @@ defmodule Duper.ResultsTest do
     Results.add_hash_for("path0", 103)
     Results.add_hash_for("path12", 153)
 
+    # the results of our alias in action
     duplicates = Results.find_duplicates()
 
     assert length(duplicates) == 3
